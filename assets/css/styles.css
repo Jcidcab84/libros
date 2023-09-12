@@ -1,131 +1,214 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@500&display=swap");
 
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 /* header */
 
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-    background-color: #107acc;
-    color: white;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  background-color: #107acc;
+  color: white;
+  grid-area: header;
 }
 
-header .logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+header .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-header .logo span{
-    font-size: 4rem;
+header .logo span {
+  font-size: 4rem;
 }
 
-header .logo p{
-    font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
+header .logo p {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
 }
 
-header nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 0 auto;
-    height: auto;
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* padding: 0 auto; */
+  height: auto;
 }
 
 header nav ul li {
-    list-style-type: none;
-    font-size: 1.5rem;
-    
-    /* height: auto; */
-}
+  list-style-type: none;
+  font-size: 1.5rem;
 
-header nav ul li a{
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    /* display: flex;
+  /* height: auto; */
+}
+h1{
+    color: #107acc;
+    text-align: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  /* padding: 20px; */
+  /* display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; */
-    /* height: 100%; */
+  /* height: 100%; */
 }
 
-
-header nav ul li a:hover{
-    background-color: white;
-    color: #107acc;
-    /* height: 100%; */
-    padding: 100% 20px;
-    
+header nav ul li a:hover {
+  background-color: white;
+  color: #107acc;
+  /* height: 100%; */
+  padding: 100% 20px;
 }
 
 /* contenido */
-main .libro1{
-    background-image: url(/assets/img/1984.jpg);   
-}
- 
-main .libro2{
-    background-image: url(/assets/img/apocalipsis.jpg);   
+main .libro1 {
+  background-image: url(/assets/img/1984.jpg);
 }
 
-main .libro3{
-    background-image: url(/assets/img/arte\ de\ la\ guerra.jpg);   
+main .libro2 {
+  background-image: url(/assets/img/apocalipsis.jpg);
 }
 
-main .libro4{
-    background-image: url(/assets/img/cronicas\ marcianas.jpg);   
+main .libro3 {
+  background-image: url(/assets/img/arte\ de\ la\ guerra.jpg);
 }
 
-main .libro5{
-    background-image: url(/assets/img/jinetes.jpg);   
+main .libro4 {
+  background-image: url(/assets/img/cronicas\ marcianas.jpg);
 }
 
-main .libro6{
-    background-image: url(/assets/img/el\ cuento\ de\ la\ criada.jpg);   
+main .libro5 {
+  background-image: url(/assets/img/jinetes.jpg);
 }
 
-main .libro7{
-    background-image: url(/assets/img/los\ testamentos.jpg);   
+main .libro6 {
+  background-image: url(/assets/img/el\ cuento\ de\ la\ criada.jpg);
 }
 
-main .libro8{
-    background-image: url(/assets/img/un\ mundo\ feliz.jpg);   
+main .libro7 {
+  background-image: url(/assets/img/los\ testamentos.jpg);
 }
 
-
-main .libro8{
-    background-image: url(/assets/img/tambor\ de\ hojalata.jpg);   
+main .libro8 {
+  background-image: url(/assets/img/un\ mundo\ feliz.jpg);
 }
 
+main .libro9 {
+  background-image: url(/assets/img/tambor\ de\ hojalata.jpg);
+}
 
-
-
-main .item{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 400px;
-    height: 700px; 
-    color: transparent;
-    transition: all 1s linear;
-    
-
-} 
-
+main .item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 700px;
+  color: transparent;
+  transition: all 2s ease-in-out 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 15px;
+  text-align: justify;
+}
 
 main .item:hover{
-    color:white ;
+    color:#107acc ;
     opacity: 0.8;
-    background-color: #107acc;
+    background-color: white;
+    background-image: none;
   
+}
+
+/* main .item:hover{}
+@keyframes libros {
+  from {
+    background-color: #107acc;
+    opacity: 0;
+    background-image: transparent;
+    color: white;
+  }
+  to {
+    background-color: #107acc;
+    background-image: none;
+    opacity: 1;
+    color: white;
+  }
+} */
+
+
+footer{
+    color: white;
+    background-color: #107acc;
+}
+
+footer .rrss a{
+    color: white;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* dispositivos moviles */
+
+
+
+/* header */
+@media(max-width:576px){
+    header{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    header .logo{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;   
+    }
+
+    header .logo span{
+        font-size: 10rem;
+    }
+
+    header .logo p{
+        padding-top: -10px;
+    }
+
+    header nav ul  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; 
+    }
+
+
+/* contenido */
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        margin-top: 30px;
+        height: 100%;
+    }
 }

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@500&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    background-color: #107acc;
+    color: white;
+}
+
+header .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo span{
+    font-size: 4rem;
+}
+
+header .logo p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 auto;
+    height: auto;
+}
+
+header nav ul li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    
+    /* height: auto; */
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    /* height: 100%; */
+}
+
+
+header nav ul li a:hover{
+    background-color: white;
+    color: #107acc;
+    /* height: 100%; */
+    padding: 100% 20px;
+    
+}
+
+/* contenido */
+main .libro1{
+    background-image: url(/assets/img/1984.jpg);   
+}
+ 
+main .libro2{
+    background-image: url(/assets/img/apocalipsis.jpg);   
+}
+
+main .libro3{
+    background-image: url(/assets/img/arte\ de\ la\ guerra.jpg);   
+}
+
+main .libro4{
+    background-image: url(/assets/img/cronicas\ marcianas.jpg);   
+}
+
+main .libro5{
+    background-image: url(/assets/img/jinetes.jpg);   
+}
+
+main .libro6{
+    background-image: url(/assets/img/el\ cuento\ de\ la\ criada.jpg);   
+}
+
+main .libro7{
+    background-image: url(/assets/img/los\ testamentos.jpg);   
+}
+
+main .libro8{
+    background-image: url(/assets/img/un\ mundo\ feliz.jpg);   
+}
+
+
+main .libro8{
+    background-image: url(/assets/img/tambor\ de\ hojalata.jpg);   
+}
+
+
+
+
+main .item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 700px; 
+    color: transparent;
+    transition: all 1s linear;
+    
+
+} 
+
+
+main .item:hover{
+    color:white ;
+    opacity: 0.8;
+    background-color: #107acc;
+  
+}
